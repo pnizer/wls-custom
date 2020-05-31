@@ -61,8 +61,11 @@ cd fonts
 wget https://download.damieng.com/fonts/original/EnvyCodeR-PR7.zip
 unzip EnvyCodeR-PR7.zip
 git clone https://github.com/powerline/fontpatcher.git
+
 sudo apt-get install fontforge -y
 
+fontforge fontpatcher/scripts/powerline-fontpatcher Envy\ Code\ R\ PR7/*.ttf
+cd ..
 
 # awscli
 pip3 install awscli
