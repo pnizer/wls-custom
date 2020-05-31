@@ -1,0 +1,3 @@
+>> ADD to /home/linuxbrew/.linuxbrew/lib/node_modules/pure-prompt/pure.zsh after #Execution Time
+
+preprompt_parts+=('%F{$prompt_pure_colors[user]}%*%f')
