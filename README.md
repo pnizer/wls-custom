@@ -9,3 +9,5 @@ Configuration files for customize WLS terminal and zsh
 * Custom colors for WSL terminal and Windows Terminal
 * Docker client installation with zsh completion
 * kubectl installation with zsh completion
+
+![Windows Terminal](windows-terminal.png?raw=true "Windows Terminal with tmux")
