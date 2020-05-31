@@ -41,10 +41,10 @@ setopt share_history
 
 export DOCKER_HOST=localhost:2375
 
-export PURE_PROMPT_SYMBOL=">"
-export PURE_PROMPT_VICMD_SYMBOL="<"
-export PURE_GIT_DOWN_ARROW="↓"
-export PURE_GIT_UP_ARROW="↑"
+#export PURE_PROMPT_SYMBOL=">"
+#export PURE_PROMPT_VICMD_SYMBOL="<"
+#export PURE_GIT_DOWN_ARROW="↓"
+#export PURE_GIT_UP_ARROW="↑"
 
 source ~/.zsh/plugins/zsh-term-title/term-title.plugin.zsh
 
