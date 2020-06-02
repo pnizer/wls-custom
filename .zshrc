@@ -39,6 +39,8 @@ HISTFILE=~/.zsh_history
 setopt APPEND_HISTORY
 setopt share_history
 
+setopt auto_cd
+
 export DOCKER_HOST=localhost:2375
 
 #export PURE_PROMPT_SYMBOL=">"
@@ -53,3 +55,13 @@ unsetopt BEEP
 source <(kubectl completion zsh)
 source /home/nizer/.local/bin/aws_zsh_completer.sh
 source ~/.zsh/completion/_docker
+
+# delete and navigate words with crtl
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey '^H' backward-kill-word
+bindkey '^[[3;5~' kill-word
+
+# FZF
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

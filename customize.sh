@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 
@@ -28,6 +29,12 @@ chsh -s /bin/zsh
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 cp .tmux ~
+
+# fzf
+brew install the_silver_searcher
+brew install fzf
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install --all
 
 # docker
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
@@ -69,4 +76,3 @@ cd ..
 
 # awscli
 pip3 install awscli
-
